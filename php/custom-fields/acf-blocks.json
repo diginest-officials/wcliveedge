@@ -1,0 +1,152 @@
+[
+    {
+        "name": "hero",
+        "title": "Hero Section",
+        "description": "This is the first section of a homepage.",
+        "template": "hero"
+    },
+    {
+        "name": "collection",
+        "title": "Collection Section",
+        "description": "This is the collection section of a webpage where you can see a collection of products.",
+        "template": "collection"
+    },
+    {
+        "name": "featured-slider",
+        "title": "Featured Slider Section",
+        "description": "This is the featured slider section of a webpage where you can display a slider of featured products.",
+        "template": "featured-slider"
+    },
+    {
+        "name": "products",
+        "title": "Products Section",
+        "description": "This is the products section of a webpage where you can display your products manually.",
+        "template": "products"
+    },
+    {
+        "name": "video",
+        "title": "Video Section",
+        "description": "This is the video section of a webpage where you can display a video.",
+        "template": "video"
+    },
+    {
+        "name": "process",
+        "title": "Process Section",
+        "description": "This is the process section of a webpage where you can display a process.",
+        "template": "process"
+    },
+    {
+        "name": "focus-slider",
+        "title": "Focus Slider Section",
+        "description": "This is the focus slider section of a webpage where you can display a centered slider of products.",
+        "template": "focus-slider"
+    },
+    {
+        "name": "text-image",
+        "title": "Text Image Section",
+        "description": "This is the text image section of a webpage where you can add text on one side and image to other.",
+        "template": "text-image"
+    },
+    {
+        "name": "accordion",
+        "title": "Accordion Section",
+        "description": "This is the accordion section of a webpage where you can display an collapsable fields.",
+        "template": "accordion"
+    },
+    {
+        "name": "newsletter",
+        "title": "Newsletter Section",
+        "description": "This is the newsletter section of a webpage where you can display an newsletter form.",
+        "template": "newsletter"
+    },
+    {
+        "name": "social-media",
+        "title": "Social Media Section",
+        "description": "This is the social media section of a webpage where you can display posts of your social media.",
+        "template": "social-media"
+    },
+    {
+        "name": "collection-year",
+        "title": "Collection Year Section",
+        "description": "This is the collection year section of a webpage where you can display current year collection.",
+        "template": "collection-year"
+    },
+    {
+        "name": "product-year",
+        "title": "Product Year Section",
+        "description": "This is the yearly product section of a webpage where you can display current year collection.",
+        "template": "product-year"
+    },
+    {
+        "name": "story",
+        "title": "Story Section",
+        "description": "This is the story section of a webpage where you can display a large content with alot of text.",
+        "template": "story"
+    },
+    {
+        "name": "team",
+        "title": "Team Section",
+        "description": "This is the team section of a webpage where you can display your team members.",
+        "template": "team"
+    },
+    {
+        "name": "showcase",
+        "title": "Showcase Section",
+        "description": "This is the showcase section of a webpage where you can showcase anything.",
+        "template": "showcase"
+    },
+    {
+        "name": "material-banner",
+        "title": "Material Banner Section",
+        "description": "This is the material banner section of a webpage which is first section of material page.",
+        "template": "material-banner"
+    },
+    {
+        "name": "material-products",
+        "title": "Material Products Section",
+        "description": "This is the material products section of a webpage which displays your material products.",
+        "template": "material-products"
+    },
+    {
+        "name": "image-comparison",
+        "title": "Image Comparison Section",
+        "description": "This is the image comparison section of a webpage.",
+        "template": "image-comparison"
+    },
+    {
+        "name": "material-finish",
+        "title": "Material Finish Section",
+        "description": "This is the material finish section of a webpage.",
+        "template": "material-finish"
+    },
+    {
+        "name": "material-table",
+        "title": "Material Table Section",
+        "description": "This is the material table section of a webpage.",
+        "template": "material-table"
+    },
+    {
+        "name": "contact-info",
+        "title": "Contact Info Section",
+        "description": "This is the contact info section where you can display your contact information in a webpage.",
+        "template": "contact-info"
+    },
+    {
+        "name": "contact-form",
+        "title": "Contact Form Section",
+        "description": "This is the contact form section where you can display your full form in a webpage.",
+        "template": "contact-form"
+    },
+    {
+        "name": "faq-classic",
+        "title": "FAQ Classic Section",
+        "description": "This is the faq section where you can display your accordions in a classic way.",
+        "template": "faq-classic"
+    },
+    {
+        "name": "faq",
+        "title": "FAQ Section",
+        "description": "This is the faq section where you can display your accordions in a column.",
+        "template": "faq"
+    }
+]

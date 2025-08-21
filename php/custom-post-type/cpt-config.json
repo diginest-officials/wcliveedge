@@ -1,0 +1,52 @@
+[
+    {
+        "post_type": "portfolio",
+        "slug": "portfolio",
+        "supports": ["title", "editor", "thumbnail", "excerpt", "revisions", "author"],
+        "labels": {
+            "name": "Portfolio",
+            "add_new_item": "Add New Portfolio Item",
+            "edit_item": "Edit Portfolio Item",
+            "all_items": "All Portfolio Items",
+            "singular_name": "Portfolio"
+        },
+        "menu_icon": "dashicons-portfolio",
+        "taxonomy": {
+            "name": "portfolio_cat",
+            "labels": {
+                "name": "Portfolio Categories",
+                "singular_name": "Portfolio Category",
+                "menu_name": "Categories",
+                "all_items": "All Categories",
+                "add_new_item": "Add New Category",
+                "edit_item": "Edit Category",
+                "view_item": "View Category"
+            }
+        }
+    },
+    {
+        "post_type": "product",
+        "slug": "products",
+        "supports": ["title", "editor", "thumbnail"],
+        "labels": {
+            "name": "Products",
+            "add_new_item": "Add New Product",
+            "edit_item": "Edit Product",
+            "all_items": "All Products",
+            "singular_name": "Product"
+        },
+        "menu_icon": "dashicons-cart",
+        "taxonomy": {
+            "name": "product_cat",
+            "labels": {
+                "name": "Product Categories",
+                "singular_name": "Product Category",
+                "menu_name": "Product Categories",
+                "all_items": "All Product Categories",
+                "add_new_item": "Add New Product Category",
+                "edit_item": "Edit Product Category",
+                "view_item": "View Product Category"
+            }
+        }
+    }
+]

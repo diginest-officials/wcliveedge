@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'THICCCBOI';
+    src: url('THICCCBOI-Thin.eot');
+    src: url('THICCCBOI-Thin.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-Thin.woff2') format('woff2'),
+        url('THICCCBOI-Thin.woff') format('woff'),
+        url('THICCCBOI-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THICCCBOI Semi';
+    src: url('THICCCBOI-Black.eot');
+    src: url('THICCCBOI-Black.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-Black.woff2') format('woff2'),
+        url('THICCCBOI-Black.woff') format('woff'),
+        url('THICCCBOI-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THICCCBOI';
+    src: url('THICCCBOI-ExtraBold.eot');
+    src: url('THICCCBOI-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-ExtraBold.woff2') format('woff2'),
+        url('THICCCBOI-ExtraBold.woff') format('woff'),
+        url('THICCCBOI-ExtraBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THICCCBOI';
+    src: url('THICCCBOI-Bold.eot');
+    src: url('THICCCBOI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-Bold.woff2') format('woff2'),
+        url('THICCCBOI-Bold.woff') format('woff'),
+        url('THICCCBOI-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THICCCBOI';
+    src: url('THICCCBOI-SemiBold.eot');
+    src: url('THICCCBOI-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-SemiBold.woff2') format('woff2'),
+        url('THICCCBOI-SemiBold.woff') format('woff'),
+        url('THICCCBOI-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THICCCBOI';
+    src: url('THICCCBOI-ThicccAF.eot');
+    src: url('THICCCBOI-ThicccAF.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-ThicccAF.woff2') format('woff2'),
+        url('THICCCBOI-ThicccAF.woff') format('woff'),
+        url('THICCCBOI-ThicccAF.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THICCCBOI';
+    src: url('THICCCBOI-Medium.eot');
+    src: url('THICCCBOI-Medium.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-Medium.woff2') format('woff2'),
+        url('THICCCBOI-Medium.woff') format('woff'),
+        url('THICCCBOI-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THICCCBOI';
+    src: url('THICCCBOI-Light.eot');
+    src: url('THICCCBOI-Light.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-Light.woff2') format('woff2'),
+        url('THICCCBOI-Light.woff') format('woff'),
+        url('THICCCBOI-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'THICCCBOI';
+    src: url('THICCCBOI-Regular.eot');
+    src: url('THICCCBOI-Regular.eot?#iefix') format('embedded-opentype'),
+        url('THICCCBOI-Regular.woff2') format('woff2'),
+        url('THICCCBOI-Regular.woff') format('woff'),
+        url('THICCCBOI-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
