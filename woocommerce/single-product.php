@@ -151,12 +151,27 @@ get_header( 'shop' ); ?>
 								</div>
 
 								<div class="mb-4">
-									<?php $materials = get_field('materials'); ?>
 									<div class="py-4 border-bottom border-1">
+										<?php 
+										$terms = get_the_terms($product->ID, 'product_cat');
+										if ($terms && !is_wp_error($terms)) {
+											// Get the first term
+											$current_term = $terms[0];
+											
+											// Check if it has a parent
+											if ($current_term->parent != 0) {
+												// Get parent term
+												$parent_term = get_term($current_term->parent, 'product_cat');
+												$main_cat = $parent_term->name;
+											} else {
+												// If no parent, use the current term as main category
+												$main_cat = $current_term->name;
+											}
+										} else {
+											$main_cat = 'Uncategorized';
+										}
+										?>
 										<h3 class="size-18 fw-semibold mb-2">Category</h3>
-										<!-- WP Parent Category -->
-										<?php $terms = get_the_terms( $product->ID, 'product_cat' );
-										$main_cat = $terms[0]->parent->name; ?>
 										<p class="size-16 opacity-85"><?= $main_cat; ?></p>
 									</div>
 									
@@ -169,6 +184,7 @@ get_header( 'shop' ); ?>
 										<p class="size-16 opacity-85"><?= $cat; ?></p>
 									</div>
 
+									<?php $materials = get_field('materials'); ?>
 									<?php $lacquer_color = $materials['lacquer']['color'];
 									$lacquer_name = $materials['lacquer']['text'];
 
