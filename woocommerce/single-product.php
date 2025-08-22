@@ -156,15 +156,20 @@ get_header( 'shop' ); ?>
 									$wood_type = $materials['wood_type'];
 									if ( !empty($wood_type) ) : ?>
 									<div class="py-4 border-bottom border-1">
-										<h3 class="size-18 fw-semibold mb-2">Wood Type</h3>
-										<p class="size-16 opacity-85"><?= $wood_type; ?></p>
+										<h3 class="size-18 fw-semibold mb-2">Category</h3>
+										<!-- WP Category -->
+										<?php 
+											$terms = get_the_terms( $product->ID, 'product_cat' );
+											$cat = $terms[0]->name;
+										?>
+										<p class="size-16 opacity-85"><?= $cat; ?></p>
 									</div>
 									<?php endif;
 
 									$wood_origin = $materials['wood_origin'];
 									if ( !empty( $wood_origin ) ) : ?>
 										<div class="py-4 border-bottom border-1">
-											<h3 class="size-18 fw-semibold mb-2">Wood Orgin</h3>
+											<h3 class="size-18 fw-semibold mb-2">Type</h3>
 											<p class="size-16 opacity-85"><?= $wood_origin; ?></p>
 										</div>
 									<?php endif; 
