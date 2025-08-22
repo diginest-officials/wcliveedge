@@ -154,22 +154,22 @@ get_header( 'shop' ); ?>
 									<?php $materials = get_field('materials'); ?>
 									<div class="py-4 border-bottom border-1">
 										<h3 class="size-18 fw-semibold mb-2">Category</h3>
-										<!-- WP Category -->
-										<?php 
-											$terms = get_the_terms( $product->ID, 'product_cat' );
-											$cat = $terms[0]->name;
-										?>
+										<!-- WP Parent Category -->
+										<?php $terms = get_the_terms( $product->ID, 'product_cat' );
+										$main_cat = $terms[0]->parent ? $terms[0]->parent->name : $terms[0]->name; ?>
+										<p class="size-16 opacity-85"><?= $main_cat; ?></p>
+									</div>
+									
+									<?php 
+										$terms = get_the_terms( $product->ID, 'product_cat' );
+										$cat = $terms[0]->name;
+									?>
+									<div class="py-4 border-bottom border-1">
+										<h3 class="size-18 fw-semibold mb-2">Type</h3>
 										<p class="size-16 opacity-85"><?= $cat; ?></p>
 									</div>
-									<?php $wood_origin = $materials['wood_origin'];
-									if ( !empty( $wood_origin ) ) : ?>
-										<div class="py-4 border-bottom border-1">
-											<h3 class="size-18 fw-semibold mb-2">Type</h3>
-											<p class="size-16 opacity-85"><?= $wood_origin; ?></p>
-										</div>
-									<?php endif; 
-									
-									$lacquer_color = $materials['lacquer']['color'];
+
+									<?php $lacquer_color = $materials['lacquer']['color'];
 									$lacquer_name = $materials['lacquer']['text'];
 
 									if ($lacquer_name) : ?>
