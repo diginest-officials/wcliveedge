@@ -151,10 +151,7 @@ get_header( 'shop' ); ?>
 								</div>
 
 								<div class="mb-4">
-									<?php $materials = get_field('materials');
-
-									$wood_type = $materials['wood_type'];
-									if ( !empty($wood_type) ) : ?>
+									<?php $materials = get_field('materials'); ?>
 									<div class="py-4 border-bottom border-1">
 										<h3 class="size-18 fw-semibold mb-2">Category</h3>
 										<!-- WP Category -->
@@ -164,9 +161,7 @@ get_header( 'shop' ); ?>
 										?>
 										<p class="size-16 opacity-85"><?= $cat; ?></p>
 									</div>
-									<?php endif;
-
-									$wood_origin = $materials['wood_origin'];
+									<?php $wood_origin = $materials['wood_origin'];
 									if ( !empty( $wood_origin ) ) : ?>
 										<div class="py-4 border-bottom border-1">
 											<h3 class="size-18 fw-semibold mb-2">Type</h3>
