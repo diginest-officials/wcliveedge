@@ -119,19 +119,6 @@ function secure_file_system() {
 }
 add_action('init', 'secure_file_system');
 
-// Database Security
-function secure_database() {
-    // Disable file editing in database
-    if (!defined('DISALLOW_FILE_MODS')) {
-        define('DISALLOW_FILE_MODS', true);
-    }
-    
-    // Force prepared statements
-    global $wpdb;
-    $wpdb->show_errors = false;
-}
-add_action('init', 'secure_database');
-
 // CORS Access Control
 add_action('init', 'add_cors_headers');
 function add_cors_headers() {
