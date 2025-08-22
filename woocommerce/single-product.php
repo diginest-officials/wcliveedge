@@ -92,14 +92,6 @@ get_header( 'shop' ); ?>
 											endif; ?>
 									</div>
 								</div>
-
-								<?php $description = $product->description;
-
-								if ( !empty( $description ) ) : ?>
-								<p class="size-18 mt-5 d-none d-lg-block">
-									<?= $description; ?>
-								</p>
-								<?php endif; ?>
 							</div>
 							
 							<div class="col-lg-5 col-12 ps-lg-4">
@@ -128,6 +120,13 @@ get_header( 'shop' ); ?>
 									<?php the_title(); ?>
 								</h1>
 
+								<div class="d-flex align-items-center gap-3 mb-3">
+									<h3 class="size-16 fw-semibold">Product ID</h3>
+									<p class="size-16 py-2 px-3 text-white color-bg-1 opacity-75 rounded-pill">
+										<?= $product->sku; ?>
+									</p>
+								</div>
+
 								<?php $points = get_field('feature_points');
 
 								if ( !empty( $points ) ) : ?>
@@ -142,10 +141,18 @@ get_header( 'shop' ); ?>
 									</ul>
 								<?php endif; ?>
 
+								<?php $description = $product->description;
+
+								if ( !empty( $description ) ) : ?>
+								<p class="size-18 mt-5 d-none d-lg-block">
+									<?= $description; ?>
+								</p>
+								<?php endif; ?>
+
 								<div class="mb-2">
 									<?php $price = $product->get_regular_price();
 									if ($price) : ?>
-									<!-- <span class="size-24 fw-semibold"><?php echo '$' . number_format($product->get_regular_price(), 0); ?></span> -->
+									<span class="size-24 fw-semibold"><?php echo '$' . number_format($product->get_regular_price(), 0); ?></span>
 									<span>Inquire for pricing</span>
 									<?php endif; ?>
 								</div>
@@ -263,16 +270,9 @@ get_header( 'shop' ); ?>
 					<div class="container">
 						<div class="row">
 							<div class="col-lg-7 col-12">
-								<div class="d-flex align-items-center gap-3 mb-3">
-									<h3 class="size-16 fw-semibold">Product ID</h3>
-									<p class="size-16 py-2 px-3 text-white color-bg-1 opacity-75 rounded-pill">
-										<?= $product->sku; ?>
-									</p>
-								</div>
-
 								<?php $side_content = get_field('side_content');
 								if ( $side_content['before_text'] ) : ?>
-									<p class="size-20 fw-semibold mb-5"><?= $side_content['before_text']; ?></p>
+									<p class="size-20 fw-semibold mt-3 mb-5"><?= $side_content['before_text']; ?></p>
 								<?php endif; ?>
 
 								<?php $contents = $side_content['contents']; 
