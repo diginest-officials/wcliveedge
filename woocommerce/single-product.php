@@ -156,7 +156,7 @@ get_header( 'shop' ); ?>
 										<h3 class="size-18 fw-semibold mb-2">Category</h3>
 										<!-- WP Parent Category -->
 										<?php $terms = get_the_terms( $product->ID, 'product_cat' );
-										$main_cat = $terms[0]->parent ? $terms[0]->parent->name : $terms[0]->name; ?>
+										$main_cat = $terms[0]->parent->name; ?>
 										<p class="size-16 opacity-85"><?= $main_cat; ?></p>
 									</div>
 									
