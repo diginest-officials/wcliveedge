@@ -144,7 +144,7 @@ get_header( 'shop' ); ?>
 								<?php $description = $product->description;
 
 								if ( !empty( $description ) ) : ?>
-								<p class="size-18 mt-5 d-none d-lg-block">
+								<p class="size-18 mt-3 mb-4 d-none d-lg-block">
 									<?= $description; ?>
 								</p>
 								<?php endif; ?>
@@ -153,7 +153,6 @@ get_header( 'shop' ); ?>
 									<?php $price = $product->get_regular_price();
 									if ($price) : ?>
 									<span class="size-24 fw-semibold"><?php echo '$' . number_format($product->get_regular_price(), 0); ?></span>
-									<span>Inquire for pricing</span>
 									<?php endif; ?>
 								</div>
 
