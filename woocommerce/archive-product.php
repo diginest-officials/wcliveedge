@@ -165,7 +165,7 @@ if ( $archive_banner['image'] ) : ?>
     <section class="sec-spacing-lg">
         <div class="container">
             <div class="position-relative">
-                <img src="<?= $archive_banner['image']['url']; ?>" alt="<?= $archive_banner['image']['alt']; ?>" class="img-fluid object-fit-cover rounded-4 height-660">
+                <img src="<?= $archive_banner['image']['url']; ?>" alt="<?= $archive_banner['image']['alt']; ?>" class="w-100 img-fluid object-fit-cover rounded-4 height-660">
 
                 <div class="bg-overlay-2 position-absolute z-1 top-0 start-0 w-100 h-100 rounded-4"></div>
 
