@@ -257,17 +257,17 @@ function enqueue_quick_view_scripts() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_quick_view_scripts');
 
-// // Fallback featured image for WooCommerce products
-// add_filter( 'woocommerce_placeholder_img_src', 'efs_custom_woocommerce_placeholder', 10 );
-// function efs_custom_woocommerce_placeholder( $src ) {
-//     return 'https://elitefitnessshop.com/wp-content/uploads/woocommerce-placeholder.webp';
-// }
+// Fallback featured image for WooCommerce products
+add_filter( 'woocommerce_placeholder_img_src', 'efs_custom_woocommerce_placeholder', 10 );
+function efs_custom_woocommerce_placeholder( $src ) {
+    return 'https://elitefitnessshop.com/wp-content/uploads/woocommerce-placeholder.webp';
+}
 
-// // Ensure product thumbnail uses fallback if no featured image
-// add_filter( 'woocommerce_product_get_image', 'efs_custom_product_image', 10, 5 );
-// function efs_custom_product_image( $image, $product, $size, $attr, $placeholder ) {
-//     if ( ! has_post_thumbnail( $product->get_id() ) ) {
-//         $image = wc_placeholder_img( $size );
-//     }
-//     return $image;
-// }
+// Ensure product thumbnail uses fallback if no featured image
+add_filter( 'woocommerce_product_get_image', 'efs_custom_product_image', 10, 5 );
+function efs_custom_product_image( $image, $product, $size, $attr, $placeholder ) {
+    if ( ! has_post_thumbnail( $product->get_id() ) ) {
+        $image = wc_placeholder_img( $size );
+    }
+    return $image;
+}
