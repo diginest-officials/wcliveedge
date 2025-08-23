@@ -76,6 +76,41 @@ get_header( 'shop' ); ?>
 											endif; ?>
 									</div>
 								</div>
+
+								<div class="d-lg-block d-none">
+									<?php $support = get_field('archive_support', 'option');
+									if ( !empty( $support ) ) : ?>
+										<div class="mt-5 p-4 d-flex justify-content-between flex-sm-row flex-column row-gap-4 border border-1 color-bg-6 rounded-3">
+											<div class="width-max-250">
+												<?php $title = $support['title'];
+												if ( $title ) :
+													echo '<h3 class="size-24 fw-semibold mb-2">' . $title . '</h3>';
+												endif;
+	
+												$content = $support['content'];
+												if ( $content ) : 
+													echo '<p class="size-16 opacity-75">' . $content . '</p>';
+												endif; ?>
+											</div>
+	
+											<?php $contact = $support['contact'];
+											if ( !empty( $contact ) ) : ?>
+												<div class="d-flex flex-column gap-3">
+													<?php foreach ( $contact as $single ) :
+														if ( $single ) : ?>
+															<div>
+																<h6 class="size-14 mb-2 fw-medium"><?= $single['label']; ?></h6>
+																<a href="<?= $single['address']['url']; ?>" class="color-1 fw-semibold" target="<?= $single['address']['target']; ?>">
+																	<?= $single['address']['title']; ?>
+																</a>
+															</div>
+														<?php endif; 
+													endforeach; ?>
+												</div>
+											<?php endif; ?>
+										</div>
+									<?php endif; ?>
+								</div>
 							</div>
 							
 							<div class="col-lg-5 col-12 ps-lg-4">
@@ -244,41 +279,6 @@ get_header( 'shop' ); ?>
 										endforeach; ?>
 									</div>
 								<?php endif; ?>
-
-								<div class="d-lg-block d-none">
-									<?php $support = get_field('archive_support', 'option');
-									if ( !empty( $support ) ) : ?>
-										<div class="mt-5 p-4 d-flex justify-content-between flex-sm-row flex-column row-gap-4 border border-1 color-bg-6 rounded-3">
-											<div class="width-max-250">
-												<?php $title = $support['title'];
-												if ( $title ) :
-													echo '<h3 class="size-24 fw-semibold mb-2">' . $title . '</h3>';
-												endif;
-	
-												$content = $support['content'];
-												if ( $content ) : 
-													echo '<p class="size-16 opacity-75">' . $content . '</p>';
-												endif; ?>
-											</div>
-	
-											<?php $contact = $support['contact'];
-											if ( !empty( $contact ) ) : ?>
-												<div class="d-flex flex-column gap-3">
-													<?php foreach ( $contact as $single ) :
-														if ( $single ) : ?>
-															<div>
-																<h6 class="size-14 mb-2 fw-medium"><?= $single['label']; ?></h6>
-																<a href="<?= $single['address']['url']; ?>" class="color-1 fw-semibold" target="<?= $single['address']['target']; ?>">
-																	<?= $single['address']['title']; ?>
-																</a>
-															</div>
-														<?php endif; 
-													endforeach; ?>
-												</div>
-											<?php endif; ?>
-										</div>
-									<?php endif; ?>
-								</div>
 							</div>
 						</div>
 					</div>
