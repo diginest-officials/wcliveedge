@@ -246,7 +246,7 @@ get_header( 'shop' ); ?>
 								<?php endif; ?>
 
 								<div class="d-lg-block d-none">
-									<?php $support = get_field('support');
+									<?php $support = get_field('archive_support', 'option');
 									if ( !empty( $support ) ) : ?>
 										<div class="mt-5 p-4 d-flex justify-content-between flex-sm-row flex-column row-gap-4 border border-1 color-bg-6 rounded-3">
 											<div class="width-max-250">
@@ -411,7 +411,7 @@ get_header( 'shop' ); ?>
 								<?php endif; ?>
 
 								<div class="d-lg-none d-block">
-									<?php $support = get_field('support');
+									<?php $support = get_field('archive_support', 'option');
 									if ( !empty( $support ) ) : ?>
 										<div class="mt-5 p-4 d-flex justify-content-between flex-sm-row flex-column row-gap-4 border border-1 color-bg-6 rounded-3">
 											<div class="width-max-250">
