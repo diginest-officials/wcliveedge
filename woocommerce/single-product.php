@@ -413,7 +413,7 @@ get_header( 'shop' ); ?>
 								<div class="d-lg-none d-block">
 									<?php $support = get_field('archive_support', 'option');
 									if ( !empty( $support ) ) : ?>
-										<div class="mt-5 p-4 d-flex justify-content-between flex-sm-row flex-column row-gap-4 border border-1 color-bg-6 rounded-3">
+										<div class="p-4 d-flex justify-content-between flex-sm-row flex-column row-gap-4 border border-1 color-bg-6 rounded-3">
 											<div class="width-max-250">
 												<?php $title = $support['title'];
 												if ( $title ) :
