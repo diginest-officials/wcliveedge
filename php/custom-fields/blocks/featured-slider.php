@@ -27,7 +27,7 @@
                                 class="rounded-md w-100 object-fit-jy"
                                 style="height: 660px; max-height: 100%;" />
 
-                                <div class="w-100 h-100 position-absolute start-0 top-0" style="background: #00000033;"></div>
+                                <div class="w-100 h-100 position-absolute start-0 top-0 z-1" style="background: #00000033;"></div>
 
                             <div class="position-absolute start-0 bottom-0 p-4 p-lg-6 z-2 width-max-430 p-4-jy">
                                 <div class="d-flex align-items-center gap-4 mb-3 mb-3-jy">
