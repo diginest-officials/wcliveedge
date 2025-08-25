@@ -23,9 +23,11 @@
                         
                         <div class="swiper-slide position-relative">
                             <img src="<?= esc_url($thumbnail_url); ?>" 
-                                 alt="<?= esc_attr($title); ?>" 
-                                 class="rounded-md w-100 object-fit-jy"
-                                 style="height: 660px; max-height: 100%;" />
+                                alt="<?= esc_attr($title); ?>" 
+                                class="rounded-md w-100 object-fit-jy"
+                                style="height: 660px; max-height: 100%;" />
+
+                                <div class="w-100 h-100 position-absolute start-0 top-0" style="background: #00000033;"></div>
 
                             <div class="position-absolute start-0 bottom-0 p-4 p-lg-6 z-2 width-max-430 p-4-jy">
                                 <div class="d-flex align-items-center gap-4 mb-3 mb-3-jy">
@@ -37,10 +39,6 @@
                                 <p class="size-16 d-none d-lg-block text-white opacity-75"><?=  wp_trim_words(get_the_excerpt($id), 20, '...'); ?></p>
 
                                 <div class="d-flex align-items-center gap-sm-3 gap-2 mt-4 mb-5 pb-lg-3 my-jy">
-                                    <!-- <a href="https://wcliveedge.wpenginepowered.com/products/the-helmcken-desk/"
-                                        class="text-decoration-none color-3 bg-white py-2 px-sm-3 px-1 border border-1 border-white rounded-pill btn-over-3 size-18 fw-semibold width-mobile-100 text-center">
-                                        Order Now
-                                    </a> -->
                                     <a href="<?= esc_url($permalink); ?>"
                                         class="text-decoration-none text-white py-2 px-sm-3 px-1 border border-1 border-white rounded-pill btn-over-3 btn-blur size-18 fw-semibold text-center size-18-jy full-opacity padding-jy width-min-130">
                                         View Product
