@@ -78,12 +78,12 @@ function secure_assets() {
 }
 add_action('init', 'secure_assets');
 
-function remove_asset_versions($src) {
-    if (strpos($src, 'ver=')) {
-        $src = remove_query_arg('ver', $src);
-    }
-    return $src;
-}
+// function remove_asset_versions($src) {
+//     if (strpos($src, 'ver=')) {
+//         $src = remove_query_arg('ver', $src);
+//     }
+//     return $src;
+// }
 
 // Prevent User Enumeration
 function prevent_user_enumeration() {
