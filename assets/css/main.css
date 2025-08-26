@@ -259,7 +259,7 @@ img {
 /* Swiper Focus */
 .swiper-focus .swiper-slide img {
     transition: transform 0.3s ease;
-    background-color: #000;
+    background-color: #000 !important;
 }
 .swiper-focus .swiper-slide-active img {
     transform: scaleX(1.1) scaleY(1.3);
