@@ -28,12 +28,11 @@ if (is_array($section)) {
                     foreach ($products as $id) : 
                         if ($id) : ?>
                             <div class="swiper-slide position-relative">
-                                <div class="position-relative">
+                                <div class="position-relative" style="background: #000000;">
                                     <img
                                         src="<?= get_the_post_thumbnail_url($id); ?>"
                                         alt="<?= get_the_title($id); ?>"
-                                        class="w-100 height-350 height-lg-470 object-fit-cover rounded-md opacity-50"
-                                        style="background: #000000;">
+                                        class="w-100 height-350 height-lg-470 object-fit-cover rounded-md opacity-50">
 
                                     <div class="d-flex flex-column flex-lg-row align-items-lg-end gap-3 justify-content-between position-absolute start-0 bottom-0 w-100 z-2 swiper-disable">
                                         <h3 class="size-24 size-lg-40 text-white width-max-lg-340 width-max-200">
