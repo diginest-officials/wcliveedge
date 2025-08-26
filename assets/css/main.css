@@ -259,6 +259,7 @@ img {
 /* Swiper Focus */
 .swiper-focus .swiper-slide img {
     transition: transform 0.3s ease;
+    background-color: #000;
 }
 .swiper-focus .swiper-slide-active img {
     transform: scaleX(1.1) scaleY(1.3);
@@ -1074,7 +1075,9 @@ input[type="search"]::-webkit-search-cancel-button {
     white-space: normal;
     max-width: 100%;
 }
-.form-budget, .form-slab, .form-base {
+.form-budget,
+.form-slab,
+.form-base {
     margin-top: 12px;
     width: 100%;
     padding: 14px 12px;
@@ -1224,21 +1227,27 @@ input[type="search"]::-webkit-search-cancel-button {
 .btn-close {
     margin-left: 10px !important;
 }
-#quickViewModalLabel, #quickViewPrice {
+#quickViewModalLabel,
+#quickViewPrice {
     font-size: 1.35rem;
 }
 #quickViewDescription {
     font-weight: 500;
     overflow: scroll;
 }
-#quickViewImages, #quickViewModal .swiper-slide img {
+#quickViewImages,
+#quickViewModal .swiper-slide img {
     max-width: 430px !important;
 }
-#quickViewBody, #quickViewModal .swiper-slide, #quickViewBodyLeft .swiper-product, #quickViewModal .swiper-slide img {
+#quickViewBody,
+#quickViewModal .swiper-slide,
+#quickViewBodyLeft .swiper-product,
+#quickViewModal .swiper-slide img {
     display: flex;
     justify-content: center;
 }
-#quickViewModal .modal-header, #quickViewModal .modal-body {
+#quickViewModal .modal-header,
+#quickViewModal .modal-body {
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -1261,7 +1270,8 @@ input[type="search"]::-webkit-search-cancel-button {
         flex-direction: column !important;
         height: 100%;
     }
-    #quickViewModalLabel, #quickViewPrice {
+    #quickViewModalLabel,
+    #quickViewPrice {
         font-size: 1.25rem;
     }
     .btn-close {
@@ -1352,7 +1362,8 @@ input[type="search"]::-webkit-search-cancel-button {
         margin-left: auto !important;
         margin-right: auto !important;
     }
-    #quickViewModalLabel, #quickViewPrice {
+    #quickViewModalLabel,
+    #quickViewPrice {
         font-size: 0.95rem;
     }
     #quickViewModal .modal-content {
@@ -1382,7 +1393,8 @@ input[type="search"]::-webkit-search-cancel-button {
         padding: 8px;
         row-gap: 8px;
     }
-    #quickViewBodyLeft, #quickViewBodyLeft .swiper-product {
+    #quickViewBodyLeft,
+    #quickViewBodyLeft .swiper-product {
         width: 100%;
         max-width: 430px;
         box-sizing: border-box;
@@ -1390,7 +1402,8 @@ input[type="search"]::-webkit-search-cancel-button {
         display: flex;
         justify-content: center;
     }
-    #quickViewImages .swiper-slide, #quickViewImages .swiper-slide img {
+    #quickViewImages .swiper-slide,
+    #quickViewImages .swiper-slide img {
         /* width: 100% !important; */
         width: auto;
         box-sizing: border-box;
@@ -1430,7 +1443,9 @@ input[type="search"]::-webkit-search-cancel-button {
         width: 100%;
         padding: 8px !important;
     }
-    #quickViewModal .modal-content, #quickViewImages, #quickViewModal .swiper-slide img {
+    #quickViewModal .modal-content,
+    #quickViewImages,
+    #quickViewModal .swiper-slide img {
         max-width: 100% !important;
     }
     .all-rights-reserved {
@@ -1470,7 +1485,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (min-width: 1280px) {
-    .modal-dialog-centered, .modal-content {
+    .modal-dialog-centered,
+    .modal-content {
         width: 992px !important;
         min-width: 992px !important;
     }

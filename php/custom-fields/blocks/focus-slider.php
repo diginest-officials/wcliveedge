@@ -27,7 +27,7 @@ if (is_array($section)) {
                 if ($products) : 
                     foreach ($products as $id) : 
                         if ($id) : ?>
-                            <div class="swiper-slide position-relative rounded-md" style="background: #000000;">
+                            <div class="swiper-slide position-relative rounded-md">
                                 <div class="position-relative">
                                     <img
                                         src="<?= get_the_post_thumbnail_url($id); ?>"
