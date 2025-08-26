@@ -62,8 +62,8 @@ add_filter('rest_authentication_errors', 'secure_rest_api');
 // Enhanced Asset Protection
 function secure_assets() {
     // Remove version info from various sources
-    add_filter('script_loader_src', 'remove_asset_versions', 15, 1);
-    add_filter('style_loader_src', 'remove_asset_versions', 15, 1);
+    // add_filter('script_loader_src', 'remove_asset_versions', 15, 1);
+    // add_filter('style_loader_src', 'remove_asset_versions', 15, 1);
     remove_action('wp_head', 'wp_generator');
     remove_action('wp_head', 'wlwmanifest_link');
     remove_action('wp_head', 'rsd_link');
@@ -78,12 +78,12 @@ function secure_assets() {
 }
 add_action('init', 'secure_assets');
 
-// function remove_asset_versions($src) {
-//     if (strpos($src, 'ver=')) {
-//         $src = remove_query_arg('ver', $src);
-//     }
-//     return $src;
-// }
+function remove_asset_versions($src) {
+    if (strpos($src, 'ver=')) {
+        $src = remove_query_arg('ver', $src);
+    }
+    return $src;
+}
 
 // Prevent User Enumeration
 function prevent_user_enumeration() {
