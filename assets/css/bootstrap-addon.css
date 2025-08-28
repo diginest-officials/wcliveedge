@@ -2,7 +2,7 @@
 :root {
     --color-1: #1e1e1e;
     --color-2: #fff7f2;
-    --color-3: #1e1b16;
+    --color-3: #0b0b0b;
     --color-4: #ffffff;
     --color-5: #123abe;
 
@@ -725,10 +725,12 @@ a {
     .flex-jy .order-3 {
         flex: 0 0 calc(33.33% - 1rem);
     }
-    .flex-jy .order-4, .contact-us {
+    .flex-jy .order-4,
+    .contact-us {
         flex: 0 0 33.33%;
     }
-    .size-20-jy, .size-16-jy {
+    .size-20-jy,
+    .size-16-jy {
         font-size: 1rem;
     }
     .object-fit-jy {
@@ -774,7 +776,9 @@ a {
     .reduce-margin-bottom {
         margin-bottom: 0.5rem !important;
     }
-    .size-16-jy, .size-20-jy, .size-24-jy {
+    .size-16-jy,
+    .size-20-jy,
+    .size-24-jy {
         font-size: 1rem;
     }
     .size-32-jy {
@@ -883,7 +887,8 @@ a {
     .contact-us {
         flex: 0 0 50%;
     }
-    .size-20-jy, .size-16-jy {
+    .size-20-jy,
+    .size-16-jy {
         font-size: 0.75rem;
     }
     .pt-5-jy {
@@ -902,13 +907,14 @@ a {
     .col-11-jy {
         width: 100% !important;
     }
-    .flex-jy .col, .contact-us a {
+    .flex-jy .col,
+    .contact-us a {
         flex: 0 0 0 !important;
         font-size: 0.95rem !important;
         padding: 0 !important;
     }
     .flex-jy .py-1 {
-        padding: 0.15rem 0 !important
+        padding: 0.15rem 0 !important;
     }
     .contact-us {
         display: flex;
@@ -917,14 +923,17 @@ a {
         flex-direction: column;
         text-align: center;
     }
-    .contact-us h4, .contact-us a {
+    .contact-us h4,
+    .contact-us a {
         margin-bottom: 0 !important;
     }
-    .size-20-jy, .flex-jy h3.col {
+    .size-20-jy,
+    .flex-jy h3.col {
         font-size: 1.05rem !important;
         margin-bottom: 0.25rem !important;
     }
-    h3.size-20-jy, .size-32-jy {
+    h3.size-20-jy,
+    .size-32-jy {
         font-size: 1.25rem !important;
     }
     h4.size-20-jy {
@@ -933,10 +942,14 @@ a {
     .size-24-jy {
         font-size: 0.75rem;
     }
-    .flex-jy .col .mb-4, .reduce-padding-jy .mb-4 {
+    .flex-jy .col .mb-4,
+    .reduce-padding-jy .mb-4 {
         margin-bottom: 0.5rem !important;
     }
-    .flex-jy .col a.mb-4, .reduce-padding-jy a.mb-4, .flex-jy .col h4.mb-4, .reduce-padding-jy a.mb-4 {
+    .flex-jy .col a.mb-4,
+    .reduce-padding-jy a.mb-4,
+    .flex-jy .col h4.mb-4,
+    .reduce-padding-jy a.mb-4 {
         margin-bottom: 0.25rem !important;
     }
     .contact-us .mb-4 {
@@ -950,7 +963,10 @@ a {
         letter-spacing: 1px;
         order: 3;
     }
-    .flex-jy h3, .flex-jy h4, .flex-jy li, .flex-jy a {
+    .flex-jy h3,
+    .flex-jy h4,
+    .flex-jy li,
+    .flex-jy a {
         display: flex;
         justify-content: center;
         margin-left: auto;
@@ -960,7 +976,7 @@ a {
         gap: 0 !important;
     }
     .reduce-padding-jy {
-        padding-left: 0!important;
+        padding-left: 0 !important;
     }
     .pt-5-jy {
         padding-top: 0.25rem !important;
