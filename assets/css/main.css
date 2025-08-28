@@ -1579,3 +1579,8 @@ input[type="search"]::-webkit-search-cancel-button {
         width: calc(50% - 8px) !important;
     }
 }
+
+.woocommerce-order {
+    max-width: 1000px;
+    margin: 74px auto;
+}
