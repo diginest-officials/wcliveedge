@@ -82,7 +82,7 @@
                         endif; ?>
                     </ul>
 
-                    <div class="d-flex align-items-center gap-2 gap-lg-3 gap-sm-4 gap-xl-4 ps-0 ps-lg-4 border-start border-3 color-border-6 tablet-border-none">
+                    <div class="d-flex align-items-center gap-2 gap-lg-3 gap-sm-4 gap-xl-4">
                         <?php $search_option = $search['search_option'];
                         
                         if ( $search_option ) : ?>
