@@ -258,6 +258,8 @@ img {
 
 /* Swiper Focus */
 .swiper-focus .swiper-slide .swiper-img-wrapper {
+    overflow: hidden;
+    border-radius: 24px;
     transition: transform 0.3s ease;
     background-color: #000 !important;
 }

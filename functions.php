@@ -25,9 +25,10 @@ define('THEME_VERSION', '1.0.0');
 
 /**
  * Required files configuration
+ * 'security'    => '/php/theme-settings/security.php',
+ * 
  */
 $required_files = [
-    'security'    => '/php/theme-settings/security.php',
     'support'     => '/php/theme-settings/support.php',
     'enqueue'     => '/php/theme-settings/enqueue.php',
     'acf'         => '/php/custom-fields/acf-config.php',
