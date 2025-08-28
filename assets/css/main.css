@@ -540,7 +540,7 @@ img {
 .woocommerce-billing-fields__field-wrapper p.form-row#billing_city_field,
 .woocommerce-billing-fields__field-wrapper p.form-row.form-row-last,
 .woocommerce-billing-fields__field-wrapper p.form-row.form-row-first {
-    width: calc(50% - 8px);
+    width: calc(50% - 8px) !important;
 }
 .woocommerce-billing-fields__field-wrapper input[type="checkbox"] {
     width: 18px;
@@ -1337,7 +1337,7 @@ input[type="search"]::-webkit-search-cancel-button {
     .woocommerce-billing-fields__field-wrapper p.form-row#billing_city_field,
     .woocommerce-billing-fields__field-wrapper p.form-row.form-row-last,
     .woocommerce-billing-fields__field-wrapper p.form-row.form-row-first {
-        width: 100%;
+        width: 100% !important;
     }
     .heading h2 {
         font-size: 2rem;
@@ -1568,4 +1568,14 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-appearance: none !important;
     appearance: none !important;
     margin: 0;
+}
+
+.checkout-form-half,
+.checkout-form-full {
+    width: 100% !important;
+}
+@media screen and (min-width: 992px) {
+    .checkout-form-half {
+        width: calc(50% - 8px) !important;
+    }
 }

@@ -45,23 +45,23 @@ defined( 'ABSPATH' ) || exit;
 
     <div class="woocommerce-billing-fields__field-wrapper custom-billing-2 d-flex flex-wrap gap-3">
         
-        <?php // Country/Region Field
+        <?php 
+        // Country/Region Field
         woocommerce_form_field('billing_country', array(
             'type'        => 'country',
-            'class'       => array('form-row-wide', 'address-field', 'update_totals_on_change', 'form-row-full'),
+            'class'       => array('checkout-form-full', 'address-field', 'update_totals_on_change'),
             'placeholder' => esc_attr__('Country/Region', 'woocommerce'),
             'required'    => true,
             'clear'       => true,
             'label'       => '',
             'default'     => 'US'
-        ), $checkout->get_value('billing_country')); ?>
+        ), $checkout->get_value('billing_country'));
 
-        <?php
         // First Name Field
         woocommerce_form_field('billing_first_name', array(
             'type'        => 'text',
-            'class'       => array('form-row-first'),
-            'placeholder' => esc_attr__('First name', 'woocommerce', 'form-row-half'),
+            'class'       => array('checkout-form-half'),
+            'placeholder' => esc_attr__('First name', 'woocommerce'),
             'required'    => true,
             'clear'       => true,
             'label'       => '',
@@ -70,8 +70,8 @@ defined( 'ABSPATH' ) || exit;
         // Last Name Field
         woocommerce_form_field('billing_last_name', array(
             'type'        => 'text',
-            'class'       => array('form-row-last'),
-            'placeholder' => esc_attr__('Last name', 'woocommerce', 'form-row-half'),
+            'class'       => array('checkout-form-half'),
+            'placeholder' => esc_attr__('Last name', 'woocommerce'),
             'required'    => true,
             'clear'       => true,
             'label'       => '',
@@ -80,8 +80,8 @@ defined( 'ABSPATH' ) || exit;
         // Address Field
         woocommerce_form_field('billing_address_1', array(
             'type'        => 'text',
-            'class'       => array('form-row-wide', 'address-field'),
-            'placeholder' => esc_attr__('Address Including House No, Block & Town', 'woocommerce', 'form-row-full'),
+            'class'       => array('checkout-form-full', 'address-field'),
+            'placeholder' => esc_attr__('Address Including House No, Block & Town', 'woocommerce'),
             'required'    => true,
             'clear'       => true,
             'label'       => '',
@@ -90,19 +90,29 @@ defined( 'ABSPATH' ) || exit;
         // City Field
         woocommerce_form_field('billing_city', array(
             'type'        => 'text',
-            'class'       => array('form-row-first', 'address-field'),
-            'placeholder' => esc_attr__('City: Los Angeles, Chicago etc', 'woocommerce', 'form-row-half'),
+            'class'       => array('checkout-form-half', 'address-field'),
+            'placeholder' => esc_attr__('City (e.g. Los Angeles, Chicago)', 'woocommerce'),
             'required'    => true,
             'clear'       => true,
             'label'       => '',
         ), $checkout->get_value('billing_city'));
 
+        // State Field
+        woocommerce_form_field('billing_state', array(
+            'type'        => 'state',
+            'class'       => array('checkout-form-half', 'address-field'),
+            'placeholder' => esc_attr__('State (e.g. CA, NY, TX)', 'woocommerce'),
+            'required'    => true,
+            'clear'       => true,
+            'label'       => '',
+        ), $checkout->get_value('billing_state'));
+
         // Postcode Field
         woocommerce_form_field('billing_postcode', array(
             'type'        => 'text',
-            'class'       => array('form-row-last', 'address-field'),
-            'placeholder' => esc_attr__('Postal code (optional)', 'woocommerce', 'form-row-half'),
-            'required'    => false,
+            'class'       => array('checkout-form-half', 'address-field'),
+            'placeholder' => esc_attr__('Postal code', 'woocommerce'),
+            'required'    => true,
             'clear'       => true,
             'label'       => '',
         ), $checkout->get_value('billing_postcode'));
@@ -110,13 +120,14 @@ defined( 'ABSPATH' ) || exit;
         // Phone Field
         woocommerce_form_field('billing_phone', array(
             'type'        => 'tel',
-            'class'       => array('form-row-wide'),
-            'placeholder' => esc_attr__('Mobile - 03001234567 | For order/delivery updates', 'woocommerce', 'form-row-full'),
+            'class'       => array('checkout-form-half'),
+            'placeholder' => esc_attr__('Mobile - 03001234567 | For order/delivery updates', 'woocommerce'),
             'required'    => true,
             'clear'       => true,
             'label'       => '',
         ), $checkout->get_value('billing_phone'));
         ?>
+
 
         <!-- Save Information Checkbox -->
         <div class="form-row form-row-wide p-0 m-0">
